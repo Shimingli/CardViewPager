@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void findView() {
         mCardViewPager = (CardViewPager) findViewById(R.id.cardViewPager);
-        mCardViewPager.setAllowScroll(false);
+        mCardViewPager.setAllowScroll(true);
         ArrayList<View> viewSparseArray = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             View inflate = LayoutInflater.from(this).inflate(R.layout.text_layout, null);
